@@ -1,0 +1,34 @@
+<template>
+    <div class="app">
+        <div class="hello">
+            hello: <input type="text" value="{= msg =}">
+        </div>
+        <world msg="{{msg}}"></world>
+    </div>
+</template>
+
+<script>
+    import world from './world'
+    export default {
+        components: {
+            world: world
+        },
+        attached() {
+            console.log('attached')
+        }
+    }
+</script>
+
+<style lang="less">
+
+    .app {
+        margin: 20px auto;
+        width: 300px;
+    }
+
+    @brand-color: blue;
+    .hello {
+        color: @brand-color;
+    }
+
+</style>

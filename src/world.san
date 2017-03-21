@@ -1,0 +1,22 @@
+<template>
+    <div class="world">
+        world: {{msg}}
+    </div>
+</template>
+
+<script>
+    export default {
+    	initData() {
+    		msg: ''
+    	}
+    }
+</script>
+
+<style lang="stylus">
+
+    $-world-color = red
+
+   .world
+        color: $-world-color
+
+</style>
