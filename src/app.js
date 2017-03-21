@@ -1,11 +1,9 @@
 import {msg} from './config';
 import hello from './hello';
 
-
-let app = new hello({
+new hello({
     data: {
         msg: msg
     }
-});
-
-app.attach(document.body);
+})
+.attach(document.body);
