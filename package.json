@@ -25,6 +25,7 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "san": "^3.0.3-rc.10",
+    "san-loader": "^0.0.3",
     "style-loader": "^0.13.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
