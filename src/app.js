@@ -1,13 +1,11 @@
-import dateNow from 'date-now';
-import {format} from './helper';
+import {msg} from './config';
 import hello from './hello';
 
 
 let app = new hello({
     data: {
-        msg: format(dateNow(), 'Y-m-d')
+        msg: msg
     }
 });
 
 app.attach(document.body);
-
